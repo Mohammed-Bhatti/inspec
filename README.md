@@ -87,3 +87,16 @@
         
  ## Run a sample inspec report
         inspec exec pgstigcheck-inspec --attrs attributes.yml | pgstigcheck-inspec/tools/ansi2html.sh --bg=dark > inspec-report.html
+        
+ # STIG version
+ ## Install cerstrap
+        git clone https://github.com/square/certstrap
+        cd certstrap
+        ./build
+        
+ ## Set the PATH
+        export PATH=$PATH:/home/admin/go/bin
+        
+## Start the container
+        cd crunchy-containers-private-master/examples/docker/stig
+        ./run.sh
