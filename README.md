@@ -89,7 +89,7 @@
         inspec exec pgstigcheck-inspec --attrs attributes.yml | pgstigcheck-inspec/tools/ansi2html.sh --bg=dark > inspec-report.html
         
  # STIG version (not available for Docker)
- ## Install cerstrap
+ ## Install certstrap
         git clone https://github.com/square/certstrap
         cd certstrap
         ./build
